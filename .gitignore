@@ -1,0 +1,65 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+dist/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+Makefile
+
+# clangd and editor indexes
+.cache/
+.clangd/
+
+# Object files and libraries
+*.o
+*.obj
+*.lo
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Executables and firmware/device-tree outputs
+*.exe
+*.out
+*.elf
+*.bin
+*.hex
+*.map
+*.dtb
+*.dtbo
+
+# Logs, crash dumps, and runtime data
+*.log
+logs/
+core
+core.*
+*.pid
+*.tmp
+*.temp
+
+# Test and coverage output
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# IDE and editor local state
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS metadata
+.DS_Store
+Thumbs.db
