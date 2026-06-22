@@ -23,7 +23,7 @@ enum class SystemStatus : std::uint8_t {
 
 // temperature and humidity
 struct EnvironmentData {
-    float temperature_ = 0.0f;
-    float humidity_ = 0.0f;
+    float temperature = 0.0f;
+    float humidity = 0.0f;
     bool valid = false;
 };
