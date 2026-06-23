@@ -1,0 +1,17 @@
+sensor:
+  temp_humidity:
+    type: mock
+
+threshold:
+  dry_humidity: 20.0
+  ferment_humidity: 70.0
+  min_humidity: 0.0
+  max_humidity: 100.0
+
+display:
+  type: terminal
+  refresh_interval_ms: 1000
+  video_path: "./media/videos"
+
+process:
+  default_mode: dry
