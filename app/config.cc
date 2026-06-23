@@ -1,6 +1,8 @@
 #include "coffee_keeper/config.h"
 
+#ifdef _WIN32
 #include <yaml-cpp/node/parse.h>
+#endif
 #include <yaml-cpp/yaml.h>
 
 #include "coffee_keeper/types.h"
