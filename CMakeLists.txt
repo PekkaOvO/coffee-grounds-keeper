@@ -16,5 +16,11 @@ target_include_directories(coffee-grounds-keeper PRIVATE
 )
 
 find_package(yaml-cpp REQUIRED)
-target_link_libraries(coffee-grounds-keeper PRIVATE yaml-cpp)
 
+if(WIN32)
+    target_link_libraries(coffee-grounds-keeper PRIVATE yaml-cpp)
+elseif(APPLE)
+    target_link_libraries(coffee-grounds-keeper PRIVATE yaml-cpp::yaml-cpp)
+else()
+    target_link_libraries(coffee-grounds-keeper PRIVATE yaml-cpp::yaml-cpp)
+endif()

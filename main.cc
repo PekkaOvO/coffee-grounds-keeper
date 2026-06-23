@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
     coffee_keeper::MockSensor sensor;
     coffee_keeper::TerminalDisplay display;
 
-    const char* config_path = argc > 1 ? argv[1] : "config/default.yaml";
+    const char* config_path = argc > 1 ? argv[1] : "../config/default.yaml";
 
     coffee_keeper::AppConfig config;
     try {
